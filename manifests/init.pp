@@ -11,7 +11,7 @@ class setupassistantprofiler(
     file {"${::puppet_vardir}/setupassistantprofiler/SetupAssistant.mobileconfig":
         owner   => 0,
         group   => 0,
-        mode    => 644,
+        mode    => '0644',
         content => template('setupassistantprofiler/SetupAssistant.mobileconfig.erb')
     }
 
