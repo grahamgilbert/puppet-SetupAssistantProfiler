@@ -16,7 +16,8 @@ class setupassistantprofiler(
     }
 
     outset::everyboot{'setup_assistant_profiler.py':
-        script  => template('setupassistantprofiler/setup_assistant_profiler.py.erb'),
-        type    => 'template',
+        script        => template('setupassistantprofiler/setup_assistant_profiler.py.erb'),
+        type          => 'template',
+        immediate_run => true,
     }
 }
